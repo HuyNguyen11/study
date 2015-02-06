@@ -1,0 +1,20 @@
+{
+  "name": "Hello World!",
+  "description": "My first Chrome App.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "permissions": ["fileSystem"],
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" },
+  "browser_action": {
+          "default_icon": {                    // optional
+            "19": "calculator-128.png",           // optional
+            "38": "calculator-128.png"            // optional
+          },
+          "default_title": "Google Mail"      // optional; shown in tooltip
+        }
+}
